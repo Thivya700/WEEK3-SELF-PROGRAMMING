@@ -1,0 +1,66 @@
+package selfprogramming;
+import java.util.Scanner;
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number1;
+		int number2;
+		int number3;
+		int number4;
+		int number5;
+		int number6;
+		String name;
+		float balance;
+		float withdraw;
+		char y;
+		char n;
+		
+		Scanner scanMe = new Scanner(System.in);
+		System.out.print("Please enter your name :");
+		name = scanMe.next();
+		System.out.println("Name is " + name);
+		
+		System.out.print("Please enter your balance:");
+		balance = scanMe.nextFloat();
+		
+		System.out.print("Please enter amount for withdrawal:");
+		withdraw = scanMe.nextFloat();
+		balance = (balance - withdraw);
+		System.out.println("Amount balance is " + balance);
+		
+		System.out.println("Do you want to proceed?");
+		y = scanMe.next().charAt(0);
+		System.out.println("Yes " + y);
+		
+		n = scanMe.next().charAt(0);
+		System.out.println("No " + n);
+		
+		System.out.print("Please enter amount :");
+		number6 = scanMe.nextInt();
+		System.out.println("Amount is " + number6);
+		
+		System.out.print("Please enter amount :");
+		number1 = scanMe.nextInt();
+		System.out.println("Amount is " + number1);
+		
+		System.out.print("Please enter amount :");
+		number2 = scanMe.nextInt();
+		System.out.println("Amount is " + number2);
+		
+		System.out.print("Please enter amount :");
+		number3 = scanMe.nextInt();
+		System.out.println("Amount is " + number3);
+	
+		System.out.print("Please enter amount :");
+		number4 = scanMe.nextInt();
+		System.out.println("Amount is " + number4);
+		
+		System.out.print("Please enter amount :");
+		number5 = scanMe.nextInt();
+		System.out.println("Amount is " + number5);
+		
+	}
+
+}
